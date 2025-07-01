@@ -1,0 +1,134 @@
+.admin-dashboard-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  max-width: 1300px;
+  padding: 20px;
+}
+
+/* Header */
+.admin-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0076de;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard-header .left h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.admin-dashboard-header .left div {
+  font-size: 16px;
+}
+
+.admin-dashboard-header .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-dashboard-header label {
+  font-weight: bold;
+}
+
+.admin-dashboard-header select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Table */
+.evaluatee-status-table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.evaluatee-status-table th,
+.evaluatee-status-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+/* Status Styles */
+.status.completed {
+  color: green;
+  font-weight: bold;
+}
+
+.status.inprogress {
+  color: orange;
+  font-weight: bold;
+}
+
+.status.incompleted {
+  color: red;
+  font-weight: bold;
+}
+
+/* Self Evaluation Label */
+.self-label {
+  font-size: 0.9em;
+  color: #888;
+  margin-left: 6px;
+  font-style: italic;
+}
+
+/* Back Button */
+.back-button {
+  background-color: #0076de;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.back-button:hover {
+  background-color: #005bb5;
+}
+
+@media (max-width: 480px) {
+  .admin-dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .admin-dashboard-header .left h2 {
+    font-size: 18px;
+  }
+  .admin-dashboard-header .left div {
+    font-size: 14px;
+  }
+  .admin-dashboard-header select {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  /* ลด padding/font table บนมือถือ */
+  .evaluatee-status-table th,
+  .evaluatee-status-table td {
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+
+}
